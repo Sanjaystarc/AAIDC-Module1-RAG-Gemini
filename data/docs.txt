@@ -1,0 +1,4 @@
+LangChain is a framework designed to build applications with language models.
+Retrieval-Augmented Generation (RAG) combines information retrieval with text generation.
+Chroma is a vector database commonly used for RAG systems.
+Agentic AI systems can plan, reason, and act using tools.
