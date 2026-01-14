@@ -11,6 +11,12 @@ The assistant answers user questions by retrieving relevant information from a c
 
 This project is scoped to operate on a fixed corpus of domain-specific documents. The current implementation focuses on processing technical or instructional text documents to enable accurate and context-aware question answering. Limiting the document domain helps improve retrieval precision and reduces irrelevant context during generation.
 
+
+## RAG Configuration
+
+The RAG pipeline uses configurable parameters such as chunk size, chunk overlap, and top-k retrieval to control context preservation, retrieval accuracy, and performance. These parameters can be adjusted to optimize the system for different document sizes and query types.
+
+
 ## 🧠 System Architecture
 ```
 User Query
