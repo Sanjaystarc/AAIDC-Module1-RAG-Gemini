@@ -17,6 +17,21 @@ This project is scoped to operate on a fixed corpus of domain-specific documents
 The RAG pipeline uses configurable parameters such as chunk size, chunk overlap, and top-k retrieval to control context preservation, retrieval accuracy, and performance. These parameters can be adjusted to optimize the system for different document sizes and query types.
 
 
+## Retrieval Evaluation
+
+Retrieval quality is evaluated qualitatively by verifying whether the retrieved document chunks contain the information required to answer user queries. While no quantitative benchmarks are implemented in this version, future work may include evaluation using metrics such as precision@k and recall@k to measure retrieval effectiveness.
+
+
+## Similarity Search
+
+The system retrieves relevant document chunks using vector similarity search. Query embeddings are compared with document embeddings stored in the vector database, and the most semantically similar chunks are selected to provide contextual grounding for response generation.
+
+
+## Query Processing
+
+User queries are processed as natural language inputs and converted into vector embeddings before retrieval. This enables semantic matching between queries and document content. Future enhancements may include query rewriting or normalization techniques to further improve retrieval robustness.
+
+
 ## 🧠 System Architecture
 ```
 User Query
