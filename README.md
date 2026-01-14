@@ -7,6 +7,10 @@ The assistant answers user questions by retrieving relevant information from a c
 
 ---
 
+## Project Scope
+
+This project is scoped to operate on a fixed corpus of domain-specific documents. The current implementation focuses on processing technical or instructional text documents to enable accurate and context-aware question answering. Limiting the document domain helps improve retrieval precision and reduces irrelevant context during generation.
+
 ## 🧠 System Architecture
 ```
 User Query
