@@ -160,6 +160,5 @@ This project fulfills the requirements for **AAIDC Module 1: Foundations of Agen
 
 ---
 
-## 🧾 License
-This project is intended for **educational purposes** as part of the Ready Tensor Agentic AI Developer Certification program.
-
+## License
+This project is licensed under the MIT License.
