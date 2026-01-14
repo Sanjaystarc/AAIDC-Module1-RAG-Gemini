@@ -4,6 +4,14 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import Chroma
 
+# =========================
+# RAG Chunking Configuration
+# =========================
+CHUNK_SIZE = 500        # Number of characters per chunk
+CHUNK_OVERLAP = 50      # Overlapping characters between chunks
+
+
+
 # Load Gemini API Key from Codespaces Secret
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
@@ -15,9 +23,10 @@ documents = loader.load()
 
 # Split documents
 splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500,
-    chunk_overlap=50
+    chunk_size=CHUNK_SIZE,
+    chunk_overlap=CHUNK_OVERLAP
 )
+
 chunks = splitter.split_documents(documents)
 
 # Create embeddings
