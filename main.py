@@ -27,7 +27,8 @@ vectorstore = Chroma(
     persist_directory="chroma_db",
     embedding_function=embeddings
 )
-retriever = vectorstore.as_retriever()
+retriever = vectorstore.as_retriever(search_kwargs={"k": TOP_K})
+
 
 # LLM
 llm = ChatGoogleGenerativeAI(
