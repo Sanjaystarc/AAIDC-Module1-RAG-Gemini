@@ -1,0 +1,19 @@
+# Python byte files
+*.pyc
+__pycache__/
+
+# Virtual environments
+venv/
+.env
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Chroma DB or other vector store folders
+chroma_db/
+*.db
+
+# IDE folders
+.vscode/
+.idea/
